@@ -69,8 +69,8 @@ class Rational(Function):
     def __init__(self, numerator, denominator):
         """
 
-        :type numerator: polynomial
-        :type denominator: polynomial
+        :type numerator: Polynomial
+        :type denominator: Polynomial
         """
         Function.__init__(self)
         self.numerator = numerator
