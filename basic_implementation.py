@@ -3,35 +3,6 @@ import matplotlib.pyplot as plt
 import function_types as ft
 
 
-'''def create_function():
-    function_types = [('Polynomial', ft.Polynomial.get_general_form()),
-                      ('Rational', ft.Rational.get_general_form()),
-                      ('Exponential', ft.Exponential.get_general_form()),
-                      ('Logarithmic', ft.Logarithmic.get_general_form()),
-                      ('Sine', ft.Sine.get_general_form()),
-                      ('Cosine', ft.Cosine.get_general_form()),
-                      ('Tangent', ft.Tangent.get_general_form())]
-    func_asked = input('Select a general form for your function from the list of function types by typing `Types`')
-    if func_asked == 'Types':
-        for type in function_types:
-            print(type[0] + '\t' + type[1])
-    if func_asked == 'Polynomial':
-        function = ft.Polynomial.ask_for('Polynomial')
-    if func_asked == 'Rational':
-        function = ft.Rational.ask_for()
-    if func_asked == 'Exponential':
-        function = ft.Exponential.ask_for()
-    if func_asked == 'Logarithmic':
-        function = ft.Logarithmic.ask_for()
-    if func_asked == 'Sine':
-        function = ft.Sine.ask_for()
-    if func_asked == 'Cosine':
-        function = ft.Cosine.ask_for()
-    if func_asked == 'Tangent':
-        function = ft.Tangent.ask_for()
-    return function'''
-
-
 def plot():
     function_types = [('Polynomial', ft.Polynomial.get_general_form()),
                       ('Rational', ft.Rational.get_general_form()),
