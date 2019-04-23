@@ -106,7 +106,7 @@ class Exponential(Function):
         self.b = b
 
     def __str__(self):
-        val = 'y = ' + self.a + ' * ' + self.b + ' ^ x'
+        val = 'y = ' + str(self.a) + ' * ' + str(self.b) + ' ^ x'
         return val
 
     @staticmethod
@@ -132,7 +132,7 @@ class Logarithmic(Function):
         self.base = base
 
     def __str__(self):
-        val = 'y = log_' + self.base + '(x)'
+        val = 'y = log_' + str(self.base) + '(x)'
         return val
 
     @staticmethod
@@ -160,7 +160,7 @@ class Sine(Function):
         self.d = d
 
     def __str__(self):
-        val = 'y = ' + self.a + ' * sin(' + self.b + ' * x - ' + self.c + ') + ' + self.d
+        val = 'y = ' + str(self.a) + ' * sin(' + str(self.b) + ' * x - ' + str(self.c) + ') + ' + str(self.d)
         return val
 
     @staticmethod
@@ -191,7 +191,7 @@ class Cosine(Function):
         self.d = d
 
     def __str__(self):
-        val = 'y = ' + self.a + ' * cos(' + self.b + ' * x - ' + self.c + ') + ' + self.d
+        val = 'y = ' + str(self.a) + ' * cos(' + str(self.b) + ' * x - ' + str(self.c) + ') + ' + str(self.d)
         return val
 
     @staticmethod
@@ -222,7 +222,7 @@ class Tangent(Function):
         self.d = d
 
     def __str__(self):
-        val = 'y = ' + self.a + ' * tan(' + self.b + ' * x - ' + self.c + ') + ' + self.d
+        val = 'y = ' + str(self.a) + ' * tan(' + str(self.b) + ' * x - ' + str(self.c) + ') + ' + str(self.d)
         return val
 
     @staticmethod
