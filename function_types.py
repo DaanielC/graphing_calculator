@@ -1,6 +1,7 @@
 import numpy as np
 
 
+# Use this one for 2d
 def parse_number(message):
     ini_x = input(message)
     if 'pi' in ini_x:

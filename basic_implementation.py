@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import function_types as ft
 
 
+# Use this one for 2c
 def plot():
     function_types = [('Polynomial', ft.Polynomial.get_general_form()),
                       ('Rational', ft.Rational.get_general_form()),
@@ -46,6 +47,8 @@ def plot():
         print(str(i) + '\t' + str(y[len(y) - 1]))
 
     plt.plot(x, y)
+    plt.title(function)
+    plt.grid()
     plt.show()
 
 
