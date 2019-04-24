@@ -2,18 +2,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import function_types as ft
 
+function_types = [('Polynomial', ft.Polynomial.get_general_form()),
+                  ('Rational', ft.Rational.get_general_form()),
+                  ('Exponential', ft.Exponential.get_general_form()),
+                  ('Logarithmic', ft.Logarithmic.get_general_form()),
+                  ('Sine', ft.Sine.get_general_form()),
+                  ('Cosine', ft.Cosine.get_general_form()),
+                  ('Tangent', ft.Tangent.get_general_form())]
+
 
 # Use this one for 2c
 def plot():
-    function_types = [('Polynomial', ft.Polynomial.get_general_form()),
-                      ('Rational', ft.Rational.get_general_form()),
-                      ('Exponential', ft.Exponential.get_general_form()),
-                      ('Logarithmic', ft.Logarithmic.get_general_form()),
-                      ('Sine', ft.Sine.get_general_form()),
-                      ('Cosine', ft.Cosine.get_general_form()),
-                      ('Tangent', ft.Tangent.get_general_form())]
-
-    func_asked = input('Select a general form for your function from the list of function types by typing `Types` ')
+    func_asked = input('Select a general form for your function or see the list of function types by typing `Types` ')
     if func_asked == 'Types':
         for type in function_types:
             print(type[0] + '\t' + type[1])
