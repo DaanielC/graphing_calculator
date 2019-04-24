@@ -38,13 +38,13 @@ def plot():
     x_min = ft.parse_number('What is the minimum x value to plot: ')
     x_max = ft.parse_number('What is the maximum x value to plot: ')
 
-    x = np.linspace(int(x_min), int(x_max), int(10 * (x_max - x_min)))
+    x = np.linspace(int(x_min), int(x_max), int(20 * (x_max - x_min)))
     y = []
 
     print('x\ty')
     for i in x:
         y.append(function.eval_at_x(i))
-        print(str(i) + '\t' + str(y[len(y) - 1]))
+        print(str(round(i, 2)) + '\t' + str(round(y[len(y) - 1], 2)))
 
     plt.plot(x, y)
     plt.title(function)
