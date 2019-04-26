@@ -1,5 +1,7 @@
-import numpy as np
-import matplotlib.pyplot as plt
+import numpy as np  # Copyright (c) 2005-2019, NumPy Developers.
+                    # All rights reserved.
+import matplotlib.pyplot as plt  # Copyright (c) 2012- Matplotlib Development Team;
+                                 # All Rights Reserved
 import function_types as ft
 
 function_types = [('Polynomial', ft.Polynomial.get_general_form()),
@@ -8,11 +10,16 @@ function_types = [('Polynomial', ft.Polynomial.get_general_form()),
                   ('Logarithmic', ft.Logarithmic.get_general_form()),
                   ('Sine', ft.Sine.get_general_form()),
                   ('Cosine', ft.Cosine.get_general_form()),
-                  ('Tangent', ft.Tangent.get_general_form())]
+                  ('Tangent', ft.Tangent.get_general_form())] # List of the names of different functions and their
+                                                              # general forms
 
 
-# Use this one for 2c
+
 def plot():
+    """
+    Asks the user to input a function and plots the given function
+    :return: null
+    """
     func_asked = input('Select a general form for your function or see the list of function types by typing `Types` ')
     if func_asked == 'Types':
         for type in function_types:
