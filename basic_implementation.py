@@ -10,7 +10,7 @@ function_types = [('Polynomial', ft.Polynomial.get_general_form()),
                   ('Logarithmic', ft.Logarithmic.get_general_form()),
                   ('Sine', ft.Sine.get_general_form()),
                   ('Cosine', ft.Cosine.get_general_form()),
-                  ('Tangent', ft.Tangent.get_general_form())] # List of the names of different functions and their
+                  ('Tangent', ft.Tangent.get_general_form())]  # List of the names of different functions and their
                                                               # general forms
 
 
